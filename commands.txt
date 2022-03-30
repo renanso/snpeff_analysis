@@ -1,0 +1,9 @@
+
+# build genome
+java -jar /snpEff/4.3t-Java-1.8.0_144/snpEff.jar build -gtf22 -v wm82_a2
+
+#run annotation
+
+#java -Xmx24g -jar /snpEff/4.3t-Java-1.8.0_144/snpEff.jar  -config /snpEff.config -v -stats all_lines.html wm82_a2 protein_lines_filtered_clean.vcf > protein_lines_annotations2.vcf
+
+

@@ -1,0 +1,1930 @@
+To execute snpEff run: java -jar $EBROOTSNPEFF/snpEff.jar
+00:00:00	SnpEff version SnpEff 4.3t (build 2017-11-24 10:18), by Pablo Cingolani
+00:00:00	Command: 'ann'
+00:00:00	Reading configuration file '/scratch/rs66707/analysis/scripts_v3/snpeff_files/snpEff.config'. Genome: 'Glycine_max'
+00:00:00	Reading config file: /scratch/rs66707/analysis/scripts_v3/snpeff_files/snpEff.config
+00:00:00	done
+00:00:00	Reading database for genome version 'Glycine_max' from file '/scratch/rs66707/analysis/scripts_v3/snpeff_files/./data/Glycine_max/snpEffectPredictor.bin' (this might take a while)
+00:00:12	done
+00:00:12	Loading Motifs and PWMs
+00:00:12	Building interval forest
+00:00:14	done.
+00:00:14	Genome stats :
+#-----------------------------------------------
+# Genome name                : 'Glycine_max'
+# Genome version             : 'Glycine_max'
+# Genome ID                  : 'Glycine_max[0]'
+# Has protein coding info    : true
+# Has Tr. Support Level info : true
+# Genes                      : 54174
+# Protein coding genes       : 54174
+#-----------------------------------------------
+# Transcripts                : 73319
+# Avg. transcripts per gene  : 1.35
+# TSL transcripts            : 0
+#-----------------------------------------------
+# Checked transcripts        : 
+#               AA sequences :  73319 ( 100.00% )
+#              DNA sequences :  73319 ( 100.00% )
+#-----------------------------------------------
+# Protein coding transcripts : 73319
+#              Length errors :    160 ( 0.22% )
+#  STOP codons in CDS errors :      0 ( 0.00% )
+#         START codon errors :   2582 ( 3.52% )
+#        STOP codon warnings :   1278 ( 1.74% )
+#              UTR sequences :  62993 ( 85.92% )
+#               Total Errors :   2739 ( 3.74% )
+#-----------------------------------------------
+# Cds                        : 412101
+# Exons                      : 443899
+# Exons with sequence        : 443899
+# Exons without sequence     : 0
+# Avg. exons per transcript  : 6.05
+# WARNING                    : No mitochondrion chromosome found
+#-----------------------------------------------
+# Number of chromosomes      : 1168
+# Chromosomes                : Format 'chromo_name size codon_table'
+#		'18'	62308140	Standard
+#		'1'	55915595	Standard
+#		'2'	51656713	Standard
+#		'10'	50969635	Standard
+#		'15'	50939160	Standard
+#		'6'	50722821	Standard
+#		'19'	50589441	Standard
+#		'14'	49711204	Standard
+#		'4'	49243852	Standard
+#		'3'	47781076	Standard
+#		'8'	46995532	Standard
+#		'9'	46843750	Standard
+#		'20'	46773167	Standard
+#		'7'	44683157	Standard
+#		'13'	44408971	Standard
+#		'5'	41936504	Standard
+#		'17'	41906774	Standard
+#		'12'	40113140	Standard
+#		'11'	39172790	Standard
+#		'16'	37397385	Standard
+#		'scaffold_21'	1127293	Standard
+#		'scaffold_22'	1088050	Standard
+#		'scaffold_23'	939397	Standard
+#		'scaffold_25'	776127	Standard
+#		'scaffold_24'	634454	Standard
+#		'scaffold_30'	457611	Standard
+#		'scaffold_32'	418352	Standard
+#		'scaffold_27'	394689	Standard
+#		'scaffold_28'	378823	Standard
+#		'scaffold_33'	373987	Standard
+#		'scaffold_42'	306045	Standard
+#		'scaffold_37'	287793	Standard
+#		'scaffold_45'	284739	Standard
+#		'scaffold_38'	284391	Standard
+#		'scaffold_36'	280716	Standard
+#		'scaffold_31'	270213	Standard
+#		'scaffold_35'	267900	Standard
+#		'scaffold_46'	267773	Standard
+#		'scaffold_44'	263683	Standard
+#		'scaffold_39'	258219	Standard
+#		'scaffold_40'	256783	Standard
+#		'scaffold_47'	232203	Standard
+#		'scaffold_43'	210748	Standard
+#		'scaffold_52'	188993	Standard
+#		'scaffold_64'	182431	Standard
+#		'scaffold_41'	177711	Standard
+#		'scaffold_63'	175160	Standard
+#		'scaffold_66'	170827	Standard
+#		'scaffold_77'	168119	Standard
+#		'scaffold_79'	168015	Standard
+#		'scaffold_62'	165295	Standard
+#		'scaffold_71'	164169	Standard
+#		'scaffold_50'	160106	Standard
+#		'scaffold_72'	152036	Standard
+#		'scaffold_73'	149568	Standard
+#		'scaffold_76'	149147	Standard
+#		'scaffold_54'	143480	Standard
+#		'scaffold_74'	142966	Standard
+#		'scaffold_48'	139886	Standard
+#		'scaffold_65'	132497	Standard
+#		'scaffold_53'	124315	Standard
+#		'scaffold_104'	123054	Standard
+#		'scaffold_2067'	122890	Standard
+#		'scaffold_56'	122046	Standard
+#		'scaffold_58'	117646	Standard
+#		'scaffold_57'	117597	Standard
+#		'scaffold_93'	115332	Standard
+#		'scaffold_69'	114017	Standard
+#		'scaffold_60'	109023	Standard
+#		'scaffold_80'	105630	Standard
+#		'scaffold_86'	104763	Standard
+#		'scaffold_98'	96548	Standard
+#		'scaffold_70'	96538	Standard
+#		'scaffold_68'	96141	Standard
+#		'scaffold_102'	95805	Standard
+#		'scaffold_67'	95072	Standard
+#		'scaffold_87'	94555	Standard
+#		'scaffold_96'	84751	Standard
+#		'scaffold_114'	83574	Standard
+#		'scaffold_95'	78854	Standard
+#		'scaffold_81'	76792	Standard
+#		'scaffold_84'	69299	Standard
+#		'scaffold_99'	65160	Standard
+#		'scaffold_120'	64992	Standard
+#		'scaffold_91'	63120	Standard
+#		'scaffold_103'	62954	Standard
+#		'scaffold_90'	61119	Standard
+#		'scaffold_92'	60981	Standard
+#		'scaffold_94'	59133	Standard
+#		'scaffold_97'	57671	Standard
+#		'scaffold_250'	53532	Standard
+#		'scaffold_101'	53455	Standard
+#		'scaffold_109'	52943	Standard
+#		'scaffold_107'	52861	Standard
+#		'scaffold_192'	50064	Standard
+#		'scaffold_115'	49337	Standard
+#		'scaffold_203'	48424	Standard
+#		'scaffold_282'	48327	Standard
+#		'scaffold_310'	48003	Standard
+#		'scaffold_142'	47629	Standard
+#		'scaffold_292'	47335	Standard
+#		'scaffold_225'	47015	Standard
+#		'scaffold_525'	46879	Standard
+#		'scaffold_263'	45939	Standard
+#		'scaffold_129'	45527	Standard
+#		'scaffold_1748'	45295	Standard
+#		'scaffold_121'	44738	Standard
+#		'scaffold_356'	44287	Standard
+#		'scaffold_264'	43829	Standard
+#		'scaffold_148'	43804	Standard
+#		'scaffold_274'	43507	Standard
+#		'scaffold_234'	43280	Standard
+#		'scaffold_350'	42648	Standard
+#		'scaffold_151'	42127	Standard
+#		'scaffold_156'	41971	Standard
+#		'scaffold_128'	41952	Standard
+#		'scaffold_170'	41765	Standard
+#		'scaffold_127'	41351	Standard
+#		'scaffold_822'	38537	Standard
+#		'scaffold_1765'	36662	Standard
+#		'scaffold_1997'	35284	Standard
+#		'scaffold_149'	33358	Standard
+#		'scaffold_146'	33267	Standard
+#		'scaffold_150'	32746	Standard
+#		'scaffold_162'	29535	Standard
+#		'scaffold_165'	28231	Standard
+#		'scaffold_2211'	27106	Standard
+#		'scaffold_179'	26753	Standard
+#		'scaffold_174'	26107	Standard
+#		'scaffold_168'	26055	Standard
+#		'scaffold_169'	25752	Standard
+#		'scaffold_175'	24271	Standard
+#		'scaffold_185'	23981	Standard
+#		'scaffold_183'	23457	Standard
+#		'scaffold_201'	23118	Standard
+#		'scaffold_186'	22718	Standard
+#		'scaffold_198'	22224	Standard
+#		'scaffold_196'	21903	Standard
+#		'scaffold_211'	20220	Standard
+#		'scaffold_229'	19673	Standard
+#		'scaffold_217'	19495	Standard
+#		'scaffold_285'	19418	Standard
+#		'scaffold_213'	19384	Standard
+#		'scaffold_215'	19315	Standard
+#		'scaffold_214'	19280	Standard
+#		'scaffold_247'	19143	Standard
+#		'scaffold_220'	19018	Standard
+#		'scaffold_222'	18953	Standard
+#		'scaffold_237'	18749	Standard
+#		'scaffold_236'	18719	Standard
+#		'scaffold_410'	18718	Standard
+#		'scaffold_243'	18592	Standard
+#		'scaffold_268'	18449	Standard
+#		'scaffold_226'	18424	Standard
+#		'scaffold_260'	18163	Standard
+#		'scaffold_245'	17525	Standard
+#		'scaffold_249'	17494	Standard
+#		'scaffold_303'	17325	Standard
+#		'scaffold_248'	17311	Standard
+#		'scaffold_302'	17258	Standard
+#		'scaffold_265'	17082	Standard
+#		'scaffold_258'	17045	Standard
+#		'scaffold_377'	16929	Standard
+#		'scaffold_391'	16915	Standard
+#		'scaffold_423'	16631	Standard
+#		'scaffold_291'	16605	Standard
+#		'scaffold_273'	16244	Standard
+#		'scaffold_370'	16056	Standard
+#		'scaffold_276'	15873	Standard
+#		'scaffold_290'	15393	Standard
+#		'scaffold_293'	15378	Standard
+#		'scaffold_294'	15158	Standard
+#		'scaffold_342'	15092	Standard
+#		'scaffold_318'	15077	Standard
+#		'scaffold_298'	15072	Standard
+#		'scaffold_409'	14997	Standard
+#		'scaffold_300'	14972	Standard
+#		'scaffold_304'	14958	Standard
+#		'scaffold_316'	14871	Standard
+#		'scaffold_335'	14682	Standard
+#		'scaffold_313'	14410	Standard
+#		'scaffold_353'	14349	Standard
+#		'scaffold_729'	14331	Standard
+#		'scaffold_317'	14271	Standard
+#		'scaffold_371'	14183	Standard
+#		'scaffold_328'	14128	Standard
+#		'scaffold_336'	13592	Standard
+#		'scaffold_662'	13562	Standard
+#		'scaffold_338'	13549	Standard
+#		'scaffold_339'	13497	Standard
+#		'scaffold_418'	13423	Standard
+#		'scaffold_346'	13340	Standard
+#		'scaffold_456'	13269	Standard
+#		'scaffold_349'	13133	Standard
+#		'scaffold_376'	13022	Standard
+#		'scaffold_1742'	12986	Standard
+#		'scaffold_364'	12946	Standard
+#		'scaffold_358'	12816	Standard
+#		'scaffold_363'	12758	Standard
+#		'scaffold_383'	12721	Standard
+#		'scaffold_648'	12336	Standard
+#		'scaffold_384'	12263	Standard
+#		'scaffold_473'	12262	Standard
+#		'scaffold_386'	12129	Standard
+#		'scaffold_439'	12121	Standard
+#		'scaffold_417'	12080	Standard
+#		'scaffold_382'	12074	Standard
+#		'scaffold_781'	12047	Standard
+#		'scaffold_405'	12045	Standard
+#		'scaffold_389'	11903	Standard
+#		'scaffold_900'	11867	Standard
+#		'scaffold_460'	11864	Standard
+#		'scaffold_580'	11831	Standard
+#		'scaffold_672'	11827	Standard
+#		'scaffold_470'	11811	Standard
+#		'scaffold_619'	11801	Standard
+#		'scaffold_721'	11777	Standard
+#		'scaffold_653'	11773	Standard
+#		'scaffold_403'	11767	Standard
+#		'scaffold_395'	11764	Standard
+#		'scaffold_398'	11706	Standard
+#		'scaffold_514'	11647	Standard
+#		'scaffold_402'	11587	Standard
+#		'scaffold_434'	11561	Standard
+#		'scaffold_404'	11523	Standard
+#		'scaffold_420'	11521	Standard
+#		'scaffold_416'	11242	Standard
+#		'scaffold_465'	11170	Standard
+#		'scaffold_427'	10943	Standard
+#		'scaffold_428'	10933	Standard
+#		'scaffold_430'	10861	Standard
+#		'scaffold_440'	10768	Standard
+#		'scaffold_475'	10715	Standard
+#		'scaffold_450'	10607	Standard
+#		'scaffold_493'	10607	Standard
+#		'scaffold_916'	10530	Standard
+#		'scaffold_459'	10509	Standard
+#		'scaffold_807'	10508	Standard
+#		'scaffold_448'	10505	Standard
+#		'scaffold_1633'	10496	Standard
+#		'scaffold_480'	10474	Standard
+#		'scaffold_471'	10411	Standard
+#		'scaffold_462'	10404	Standard
+#		'scaffold_523'	10383	Standard
+#		'scaffold_457'	10363	Standard
+#		'scaffold_464'	10283	Standard
+#		'scaffold_466'	10244	Standard
+#		'scaffold_1929'	10239	Standard
+#		'scaffold_469'	10200	Standard
+#		'scaffold_472'	10192	Standard
+#		'scaffold_1693'	10136	Standard
+#		'scaffold_505'	10132	Standard
+#		'scaffold_588'	10121	Standard
+#		'scaffold_476'	10120	Standard
+#		'scaffold_477'	10103	Standard
+#		'scaffold_743'	10055	Standard
+#		'scaffold_484'	9998	Standard
+#		'scaffold_490'	9922	Standard
+#		'scaffold_585'	9898	Standard
+#		'scaffold_675'	9888	Standard
+#		'scaffold_578'	9877	Standard
+#		'scaffold_1074'	9806	Standard
+#		'scaffold_509'	9772	Standard
+#		'scaffold_816'	9740	Standard
+#		'scaffold_510'	9688	Standard
+#		'scaffold_506'	9621	Standard
+#		'scaffold_1919'	9612	Standard
+#		'scaffold_508'	9600	Standard
+#		'scaffold_517'	9552	Standard
+#		'scaffold_804'	9510	Standard
+#		'scaffold_1464'	9499	Standard
+#		'scaffold_576'	9485	Standard
+#		'scaffold_522'	9471	Standard
+#		'scaffold_589'	9427	Standard
+#		'scaffold_534'	9299	Standard
+#		'scaffold_537'	9263	Standard
+#		'scaffold_598'	9258	Standard
+#		'scaffold_694'	9222	Standard
+#		'scaffold_554'	9124	Standard
+#		'scaffold_547'	9122	Standard
+#		'scaffold_699'	9119	Standard
+#		'scaffold_621'	9107	Standard
+#		'scaffold_1595'	9051	Standard
+#		'scaffold_553'	9034	Standard
+#		'scaffold_780'	9016	Standard
+#		'scaffold_639'	8988	Standard
+#		'scaffold_1084'	8972	Standard
+#		'scaffold_1334'	8963	Standard
+#		'scaffold_1497'	8954	Standard
+#		'scaffold_562'	8929	Standard
+#		'scaffold_1082'	8911	Standard
+#		'scaffold_698'	8890	Standard
+#		'scaffold_567'	8862	Standard
+#		'scaffold_1154'	8854	Standard
+#		'scaffold_636'	8830	Standard
+#		'scaffold_568'	8828	Standard
+#		'scaffold_1313'	8827	Standard
+#		'scaffold_569'	8818	Standard
+#		'scaffold_664'	8817	Standard
+#		'scaffold_1138'	8790	Standard
+#		'scaffold_1416'	8721	Standard
+#		'scaffold_592'	8717	Standard
+#		'scaffold_579'	8701	Standard
+#		'scaffold_711'	8671	Standard
+#		'scaffold_1445'	8606	Standard
+#		'scaffold_2164'	8552	Standard
+#		'scaffold_913'	8549	Standard
+#		'scaffold_696'	8528	Standard
+#		'scaffold_663'	8517	Standard
+#		'scaffold_594'	8505	Standard
+#		'scaffold_660'	8472	Standard
+#		'scaffold_629'	8460	Standard
+#		'scaffold_1126'	8419	Standard
+#		'scaffold_623'	8398	Standard
+#		'scaffold_602'	8395	Standard
+#		'scaffold_617'	8392	Standard
+#		'scaffold_994'	8371	Standard
+#		'scaffold_608'	8346	Standard
+#		'scaffold_799'	8324	Standard
+#		'scaffold_710'	8282	Standard
+#		'scaffold_612'	8268	Standard
+#		'scaffold_813'	8260	Standard
+#		'scaffold_615'	8255	Standard
+#		'scaffold_2041'	8212	Standard
+#		'scaffold_1370'	8193	Standard
+#		'scaffold_953'	8180	Standard
+#		'scaffold_863'	8115	Standard
+#		'scaffold_923'	8090	Standard
+#		'scaffold_750'	8071	Standard
+#		'scaffold_661'	8070	Standard
+#		'scaffold_1394'	8069	Standard
+#		'scaffold_628'	8045	Standard
+#		'scaffold_735'	8039	Standard
+#		'scaffold_763'	8017	Standard
+#		'scaffold_633'	8005	Standard
+#		'scaffold_1413'	7985	Standard
+#		'scaffold_762'	7980	Standard
+#		'scaffold_644'	7976	Standard
+#		'scaffold_673'	7964	Standard
+#		'scaffold_692'	7935	Standard
+#		'scaffold_1796'	7894	Standard
+#		'scaffold_655'	7893	Standard
+#		'scaffold_1109'	7862	Standard
+#		'scaffold_1899'	7839	Standard
+#		'scaffold_677'	7829	Standard
+#		'scaffold_783'	7811	Standard
+#		'scaffold_679'	7796	Standard
+#		'scaffold_788'	7738	Standard
+#		'scaffold_1582'	7730	Standard
+#		'scaffold_1412'	7727	Standard
+#		'scaffold_2166'	7711	Standard
+#		'scaffold_659'	7697	Standard
+#		'scaffold_757'	7657	Standard
+#		'scaffold_738'	7643	Standard
+#		'scaffold_1085'	7633	Standard
+#		'scaffold_2241'	7631	Standard
+#		'scaffold_1069'	7630	Standard
+#		'scaffold_1608'	7625	Standard
+#		'scaffold_742'	7624	Standard
+#		'scaffold_690'	7607	Standard
+#		'scaffold_1216'	7595	Standard
+#		'scaffold_685'	7569	Standard
+#		'scaffold_1028'	7555	Standard
+#		'scaffold_678'	7540	Standard
+#		'scaffold_2028'	7516	Standard
+#		'scaffold_682'	7503	Standard
+#		'scaffold_1539'	7490	Standard
+#		'scaffold_765'	7487	Standard
+#		'scaffold_1354'	7470	Standard
+#		'scaffold_800'	7455	Standard
+#		'scaffold_1777'	7435	Standard
+#		'scaffold_898'	7390	Standard
+#		'scaffold_2122'	7378	Standard
+#		'scaffold_1062'	7376	Standard
+#		'scaffold_865'	7330	Standard
+#		'scaffold_703'	7283	Standard
+#		'scaffold_705'	7265	Standard
+#		'scaffold_712'	7265	Standard
+#		'scaffold_907'	7257	Standard
+#		'scaffold_1386'	7256	Standard
+#		'scaffold_876'	7239	Standard
+#		'scaffold_1258'	7238	Standard
+#		'scaffold_2086'	7209	Standard
+#		'scaffold_764'	7181	Standard
+#		'scaffold_796'	7152	Standard
+#		'scaffold_715'	7142	Standard
+#		'scaffold_736'	7134	Standard
+#		'scaffold_1172'	7129	Standard
+#		'scaffold_2154'	7129	Standard
+#		'scaffold_716'	7127	Standard
+#		'scaffold_784'	7023	Standard
+#		'scaffold_1905'	7020	Standard
+#		'scaffold_2158'	7013	Standard
+#		'scaffold_732'	6997	Standard
+#		'scaffold_980'	6948	Standard
+#		'scaffold_767'	6947	Standard
+#		'scaffold_1922'	6946	Standard
+#		'scaffold_737'	6922	Standard
+#		'scaffold_2052'	6875	Standard
+#		'scaffold_2015'	6849	Standard
+#		'scaffold_871'	6845	Standard
+#		'scaffold_1381'	6827	Standard
+#		'scaffold_790'	6825	Standard
+#		'scaffold_772'	6799	Standard
+#		'scaffold_811'	6780	Standard
+#		'scaffold_1500'	6776	Standard
+#		'scaffold_885'	6775	Standard
+#		'scaffold_1978'	6767	Standard
+#		'scaffold_775'	6764	Standard
+#		'scaffold_766'	6730	Standard
+#		'scaffold_782'	6719	Standard
+#		'scaffold_866'	6719	Standard
+#		'scaffold_769'	6714	Standard
+#		'scaffold_1224'	6708	Standard
+#		'scaffold_1035'	6702	Standard
+#		'scaffold_1960'	6701	Standard
+#		'scaffold_1231'	6697	Standard
+#		'scaffold_786'	6689	Standard
+#		'scaffold_2129'	6680	Standard
+#		'scaffold_793'	6675	Standard
+#		'scaffold_933'	6674	Standard
+#		'scaffold_1331'	6665	Standard
+#		'scaffold_776'	6663	Standard
+#		'scaffold_777'	6663	Standard
+#		'scaffold_779'	6640	Standard
+#		'scaffold_1494'	6626	Standard
+#		'scaffold_858'	6613	Standard
+#		'scaffold_785'	6590	Standard
+#		'scaffold_1259'	6575	Standard
+#		'scaffold_1092'	6566	Standard
+#		'scaffold_798'	6564	Standard
+#		'scaffold_845'	6562	Standard
+#		'scaffold_957'	6562	Standard
+#		'scaffold_817'	6535	Standard
+#		'scaffold_1524'	6512	Standard
+#		'scaffold_967'	6510	Standard
+#		'scaffold_791'	6508	Standard
+#		'scaffold_906'	6486	Standard
+#		'scaffold_1011'	6452	Standard
+#		'scaffold_805'	6429	Standard
+#		'scaffold_1006'	6428	Standard
+#		'scaffold_868'	6390	Standard
+#		'scaffold_1039'	6365	Standard
+#		'scaffold_968'	6365	Standard
+#		'scaffold_905'	6352	Standard
+#		'scaffold_966'	6351	Standard
+#		'scaffold_1903'	6349	Standard
+#		'scaffold_819'	6335	Standard
+#		'scaffold_823'	6300	Standard
+#		'scaffold_825'	6293	Standard
+#		'scaffold_1125'	6284	Standard
+#		'scaffold_826'	6283	Standard
+#		'scaffold_1357'	6282	Standard
+#		'scaffold_853'	6267	Standard
+#		'scaffold_963'	6257	Standard
+#		'scaffold_1782'	6253	Standard
+#		'scaffold_1179'	6248	Standard
+#		'scaffold_1350'	6244	Standard
+#		'scaffold_1163'	6225	Standard
+#		'scaffold_1048'	6203	Standard
+#		'scaffold_938'	6175	Standard
+#		'scaffold_1173'	6169	Standard
+#		'scaffold_1040'	6136	Standard
+#		'scaffold_838'	6132	Standard
+#		'scaffold_839'	6128	Standard
+#		'scaffold_919'	6123	Standard
+#		'scaffold_926'	6123	Standard
+#		'scaffold_842'	6109	Standard
+#		'scaffold_996'	6105	Standard
+#		'scaffold_844'	6082	Standard
+#		'scaffold_875'	6062	Standard
+#		'scaffold_846'	6060	Standard
+#		'scaffold_847'	6055	Standard
+#		'scaffold_864'	6053	Standard
+#		'scaffold_850'	6045	Standard
+#		'scaffold_869'	6041	Standard
+#		'scaffold_1349'	6033	Standard
+#		'scaffold_851'	6029	Standard
+#		'scaffold_1168'	6025	Standard
+#		'scaffold_969'	6022	Standard
+#		'scaffold_2134'	6018	Standard
+#		'scaffold_854'	6015	Standard
+#		'scaffold_855'	6012	Standard
+#		'scaffold_856'	5993	Standard
+#		'scaffold_857'	5985	Standard
+#		'scaffold_880'	5984	Standard
+#		'scaffold_859'	5973	Standard
+#		'scaffold_1887'	5970	Standard
+#		'scaffold_1093'	5934	Standard
+#		'scaffold_937'	5900	Standard
+#		'scaffold_1690'	5889	Standard
+#		'scaffold_956'	5889	Standard
+#		'scaffold_879'	5885	Standard
+#		'scaffold_910'	5874	Standard
+#		'scaffold_883'	5872	Standard
+#		'scaffold_886'	5869	Standard
+#		'scaffold_1208'	5865	Standard
+#		'scaffold_1014'	5847	Standard
+#		'scaffold_892'	5846	Standard
+#		'scaffold_893'	5846	Standard
+#		'scaffold_895'	5831	Standard
+#		'scaffold_896'	5829	Standard
+#		'scaffold_976'	5826	Standard
+#		'scaffold_2139'	5825	Standard
+#		'scaffold_897'	5819	Standard
+#		'scaffold_899'	5814	Standard
+#		'scaffold_965'	5808	Standard
+#		'scaffold_974'	5789	Standard
+#		'scaffold_904'	5787	Standard
+#		'scaffold_981'	5787	Standard
+#		'scaffold_1160'	5775	Standard
+#		'scaffold_909'	5775	Standard
+#		'scaffold_1738'	5752	Standard
+#		'scaffold_1030'	5739	Standard
+#		'scaffold_920'	5730	Standard
+#		'scaffold_924'	5702	Standard
+#		'scaffold_1315'	5680	Standard
+#		'scaffold_986'	5673	Standard
+#		'scaffold_1174'	5648	Standard
+#		'scaffold_934'	5636	Standard
+#		'scaffold_1810'	5634	Standard
+#		'scaffold_987'	5625	Standard
+#		'scaffold_958'	5622	Standard
+#		'scaffold_1046'	5601	Standard
+#		'scaffold_1598'	5579	Standard
+#		'scaffold_1087'	5571	Standard
+#		'scaffold_977'	5565	Standard
+#		'scaffold_1064'	5560	Standard
+#		'scaffold_1735'	5556	Standard
+#		'scaffold_970'	5554	Standard
+#		'scaffold_1838'	5550	Standard
+#		'scaffold_1679'	5547	Standard
+#		'scaffold_950'	5542	Standard
+#		'scaffold_1698'	5532	Standard
+#		'scaffold_1641'	5525	Standard
+#		'scaffold_1001'	5523	Standard
+#		'scaffold_991'	5504	Standard
+#		'scaffold_1128'	5492	Standard
+#		'scaffold_2212'	5483	Standard
+#		'scaffold_1388'	5479	Standard
+#		'scaffold_1017'	5476	Standard
+#		'scaffold_1536'	5474	Standard
+#		'scaffold_1089'	5469	Standard
+#		'scaffold_1684'	5467	Standard
+#		'scaffold_1487'	5460	Standard
+#		'scaffold_2016'	5459	Standard
+#		'scaffold_1061'	5453	Standard
+#		'scaffold_1038'	5451	Standard
+#		'scaffold_973'	5451	Standard
+#		'scaffold_1342'	5446	Standard
+#		'scaffold_1815'	5440	Standard
+#		'scaffold_1050'	5413	Standard
+#		'scaffold_1031'	5398	Standard
+#		'scaffold_1654'	5396	Standard
+#		'scaffold_1152'	5384	Standard
+#		'scaffold_983'	5383	Standard
+#		'scaffold_1175'	5382	Standard
+#		'scaffold_985'	5372	Standard
+#		'scaffold_1827'	5368	Standard
+#		'scaffold_1041'	5357	Standard
+#		'scaffold_989'	5356	Standard
+#		'scaffold_1113'	5346	Standard
+#		'scaffold_993'	5346	Standard
+#		'scaffold_1076'	5338	Standard
+#		'scaffold_1196'	5334	Standard
+#		'scaffold_1273'	5322	Standard
+#		'scaffold_1000'	5312	Standard
+#		'scaffold_1239'	5312	Standard
+#		'scaffold_1292'	5308	Standard
+#		'scaffold_1635'	5304	Standard
+#		'scaffold_1004'	5297	Standard
+#		'scaffold_1230'	5282	Standard
+#		'scaffold_1375'	5279	Standard
+#		'scaffold_1009'	5272	Standard
+#		'scaffold_1330'	5268	Standard
+#		'scaffold_1199'	5262	Standard
+#		'scaffold_1015'	5235	Standard
+#		'scaffold_1071'	5227	Standard
+#		'scaffold_1020'	5220	Standard
+#		'scaffold_1182'	5220	Standard
+#		'scaffold_1112'	5218	Standard
+#		'scaffold_1021'	5210	Standard
+#		'scaffold_1563'	5198	Standard
+#		'scaffold_1027'	5197	Standard
+#		'scaffold_1029'	5197	Standard
+#		'scaffold_1186'	5193	Standard
+#		'scaffold_1323'	5187	Standard
+#		'scaffold_1088'	5180	Standard
+#		'scaffold_1036'	5173	Standard
+#		'scaffold_1058'	5169	Standard
+#		'scaffold_1817'	5151	Standard
+#		'scaffold_1042'	5143	Standard
+#		'scaffold_1043'	5141	Standard
+#		'scaffold_1047'	5119	Standard
+#		'scaffold_2097'	5117	Standard
+#		'scaffold_1049'	5105	Standard
+#		'scaffold_1052'	5100	Standard
+#		'scaffold_1053'	5092	Standard
+#		'scaffold_1055'	5084	Standard
+#		'scaffold_1282'	5078	Standard
+#		'scaffold_1057'	5072	Standard
+#		'scaffold_1170'	5069	Standard
+#		'scaffold_1100'	5048	Standard
+#		'scaffold_1976'	5029	Standard
+#		'scaffold_1973'	5028	Standard
+#		'scaffold_1401'	5025	Standard
+#		'scaffold_1077'	5014	Standard
+#		'scaffold_1079'	5009	Standard
+#		'scaffold_1080'	5007	Standard
+#		'scaffold_1081'	5006	Standard
+#		'scaffold_1442'	4985	Standard
+#		'scaffold_1721'	4969	Standard
+#		'scaffold_1091'	4966	Standard
+#		'scaffold_1095'	4960	Standard
+#		'scaffold_1549'	4948	Standard
+#		'scaffold_1102'	4945	Standard
+#		'scaffold_1103'	4940	Standard
+#		'scaffold_1232'	4930	Standard
+#		'scaffold_1451'	4923	Standard
+#		'scaffold_1226'	4915	Standard
+#		'scaffold_1674'	4913	Standard
+#		'scaffold_1111'	4897	Standard
+#		'scaffold_1115'	4888	Standard
+#		'scaffold_1116'	4887	Standard
+#		'scaffold_1156'	4881	Standard
+#		'scaffold_1588'	4879	Standard
+#		'scaffold_1119'	4878	Standard
+#		'scaffold_1120'	4876	Standard
+#		'scaffold_1420'	4873	Standard
+#		'scaffold_1122'	4871	Standard
+#		'scaffold_1123'	4871	Standard
+#		'scaffold_1288'	4867	Standard
+#		'scaffold_1129'	4853	Standard
+#		'scaffold_1274'	4839	Standard
+#		'scaffold_1788'	4833	Standard
+#		'scaffold_1321'	4829	Standard
+#		'scaffold_1140'	4823	Standard
+#		'scaffold_1145'	4813	Standard
+#		'scaffold_1639'	4810	Standard
+#		'scaffold_1148'	4805	Standard
+#		'scaffold_1153'	4786	Standard
+#		'scaffold_1279'	4780	Standard
+#		'scaffold_1431'	4775	Standard
+#		'scaffold_1501'	4766	Standard
+#		'scaffold_1165'	4762	Standard
+#		'scaffold_1169'	4747	Standard
+#		'scaffold_2138'	4743	Standard
+#		'scaffold_1556'	4733	Standard
+#		'scaffold_1335'	4728	Standard
+#		'scaffold_1369'	4728	Standard
+#		'scaffold_1177'	4727	Standard
+#		'scaffold_1180'	4722	Standard
+#		'scaffold_1181'	4721	Standard
+#		'scaffold_1339'	4719	Standard
+#		'scaffold_1270'	4706	Standard
+#		'scaffold_1191'	4696	Standard
+#		'scaffold_1193'	4694	Standard
+#		'scaffold_1198'	4677	Standard
+#		'scaffold_1910'	4676	Standard
+#		'scaffold_1338'	4659	Standard
+#		'scaffold_1203'	4656	Standard
+#		'scaffold_1204'	4656	Standard
+#		'scaffold_1993'	4651	Standard
+#		'scaffold_1206'	4648	Standard
+#		'scaffold_1240'	4647	Standard
+#		'scaffold_1304'	4644	Standard
+#		'scaffold_1669'	4639	Standard
+#		'scaffold_1245'	4636	Standard
+#		'scaffold_1519'	4630	Standard
+#		'scaffold_1214'	4628	Standard
+#		'scaffold_1217'	4619	Standard
+#		'scaffold_1219'	4618	Standard
+#		'scaffold_1305'	4613	Standard
+#		'scaffold_1223'	4603	Standard
+#		'scaffold_1395'	4600	Standard
+#		'scaffold_1410'	4599	Standard
+#		'scaffold_1355'	4593	Standard
+#		'scaffold_1227'	4592	Standard
+#		'scaffold_1604'	4585	Standard
+#		'scaffold_1272'	4579	Standard
+#		'scaffold_1277'	4576	Standard
+#		'scaffold_1367'	4567	Standard
+#		'scaffold_1530'	4566	Standard
+#		'scaffold_1235'	4562	Standard
+#		'scaffold_1236'	4559	Standard
+#		'scaffold_2053'	4559	Standard
+#		'scaffold_1426'	4547	Standard
+#		'scaffold_1705'	4546	Standard
+#		'scaffold_1900'	4542	Standard
+#		'scaffold_1243'	4538	Standard
+#		'scaffold_1246'	4535	Standard
+#		'scaffold_1387'	4534	Standard
+#		'scaffold_2032'	4534	Standard
+#		'scaffold_1251'	4524	Standard
+#		'scaffold_1252'	4524	Standard
+#		'scaffold_1433'	4520	Standard
+#		'scaffold_1254'	4516	Standard
+#		'scaffold_1255'	4514	Standard
+#		'scaffold_1310'	4508	Standard
+#		'scaffold_1262'	4495	Standard
+#		'scaffold_1516'	4492	Standard
+#		'scaffold_1368'	4490	Standard
+#		'scaffold_1383'	4489	Standard
+#		'scaffold_1265'	4488	Standard
+#		'scaffold_1309'	4485	Standard
+#		'scaffold_1271'	4480	Standard
+#		'scaffold_1514'	4474	Standard
+#		'scaffold_1649'	4472	Standard
+#		'scaffold_1324'	4467	Standard
+#		'scaffold_1280'	4459	Standard
+#		'scaffold_1444'	4444	Standard
+#		'scaffold_1515'	4437	Standard
+#		'scaffold_1294'	4431	Standard
+#		'scaffold_1295'	4430	Standard
+#		'scaffold_1624'	4423	Standard
+#		'scaffold_1680'	4421	Standard
+#		'scaffold_1405'	4415	Standard
+#		'scaffold_1298'	4414	Standard
+#		'scaffold_1327'	4408	Standard
+#		'scaffold_1332'	4398	Standard
+#		'scaffold_1769'	4397	Standard
+#		'scaffold_1302'	4393	Standard
+#		'scaffold_1303'	4393	Standard
+#		'scaffold_1954'	4390	Standard
+#		'scaffold_1467'	4385	Standard
+#		'scaffold_1343'	4383	Standard
+#		'scaffold_1484'	4368	Standard
+#		'scaffold_1868'	4368	Standard
+#		'scaffold_1358'	4367	Standard
+#		'scaffold_1314'	4364	Standard
+#		'scaffold_1392'	4358	Standard
+#		'scaffold_1450'	4357	Standard
+#		'scaffold_1318'	4352	Standard
+#		'scaffold_1320'	4345	Standard
+#		'scaffold_1360'	4343	Standard
+#		'scaffold_1640'	4343	Standard
+#		'scaffold_1465'	4338	Standard
+#		'scaffold_1694'	4335	Standard
+#		'scaffold_1611'	4333	Standard
+#		'scaffold_1456'	4323	Standard
+#		'scaffold_1446'	4322	Standard
+#		'scaffold_1325'	4321	Standard
+#		'scaffold_1424'	4311	Standard
+#		'scaffold_1507'	4310	Standard
+#		'scaffold_1508'	4309	Standard
+#		'scaffold_1380'	4298	Standard
+#		'scaffold_1404'	4297	Standard
+#		'scaffold_2008'	4296	Standard
+#		'scaffold_1601'	4294	Standard
+#		'scaffold_1336'	4291	Standard
+#		'scaffold_2174'	4291	Standard
+#		'scaffold_2005'	4289	Standard
+#		'scaffold_1337'	4288	Standard
+#		'scaffold_1344'	4279	Standard
+#		'scaffold_1345'	4274	Standard
+#		'scaffold_1347'	4269	Standard
+#		'scaffold_1471'	4269	Standard
+#		'scaffold_1390'	4263	Standard
+#		'scaffold_1476'	4261	Standard
+#		'scaffold_1546'	4247	Standard
+#		'scaffold_1359'	4244	Standard
+#		'scaffold_1361'	4242	Standard
+#		'scaffold_1409'	4241	Standard
+#		'scaffold_1363'	4239	Standard
+#		'scaffold_1538'	4236	Standard
+#		'scaffold_1458'	4231	Standard
+#		'scaffold_1927'	4231	Standard
+#		'scaffold_1485'	4230	Standard
+#		'scaffold_1567'	4220	Standard
+#		'scaffold_1373'	4212	Standard
+#		'scaffold_1528'	4212	Standard
+#		'scaffold_1581'	4212	Standard
+#		'scaffold_1888'	4209	Standard
+#		'scaffold_1374'	4208	Standard
+#		'scaffold_1457'	4206	Standard
+#		'scaffold_1836'	4206	Standard
+#		'scaffold_1631'	4199	Standard
+#		'scaffold_1498'	4198	Standard
+#		'scaffold_1794'	4195	Standard
+#		'scaffold_1377'	4192	Standard
+#		'scaffold_1565'	4192	Standard
+#		'scaffold_1378'	4191	Standard
+#		'scaffold_1798'	4190	Standard
+#		'scaffold_1551'	4187	Standard
+#		'scaffold_1415'	4183	Standard
+#		'scaffold_1579'	4176	Standard
+#		'scaffold_1837'	4173	Standard
+#		'scaffold_1422'	4166	Standard
+#		'scaffold_1391'	4162	Standard
+#		'scaffold_1573'	4159	Standard
+#		'scaffold_1393'	4152	Standard
+#		'scaffold_1935'	4151	Standard
+#		'scaffold_1917'	4147	Standard
+#		'scaffold_1533'	4141	Standard
+#		'scaffold_1403'	4117	Standard
+#		'scaffold_1502'	4108	Standard
+#		'scaffold_1560'	4108	Standard
+#		'scaffold_1408'	4105	Standard
+#		'scaffold_1775'	4103	Standard
+#		'scaffold_1575'	4101	Standard
+#		'scaffold_1481'	4093	Standard
+#		'scaffold_1555'	4093	Standard
+#		'scaffold_1414'	4089	Standard
+#		'scaffold_1648'	4087	Standard
+#		'scaffold_1453'	4084	Standard
+#		'scaffold_1489'	4083	Standard
+#		'scaffold_1493'	4072	Standard
+#		'scaffold_1423'	4066	Standard
+#		'scaffold_1463'	4062	Standard
+#		'scaffold_1804'	4058	Standard
+#		'scaffold_1814'	4050	Standard
+#		'scaffold_1429'	4045	Standard
+#		'scaffold_1468'	4044	Standard
+#		'scaffold_1593'	4040	Standard
+#		'scaffold_1702'	4032	Standard
+#		'scaffold_1434'	4027	Standard
+#		'scaffold_1478'	4022	Standard
+#		'scaffold_1745'	4017	Standard
+#		'scaffold_1833'	4015	Standard
+#		'scaffold_1645'	4013	Standard
+#		'scaffold_1592'	4010	Standard
+#		'scaffold_1739'	4009	Standard
+#		'scaffold_1886'	4008	Standard
+#		'scaffold_1438'	4006	Standard
+#		'scaffold_1439'	4005	Standard
+#		'scaffold_1475'	4004	Standard
+#		'scaffold_1443'	3997	Standard
+#		'scaffold_1448'	3995	Standard
+#		'scaffold_1726'	3991	Standard
+#		'scaffold_1617'	3988	Standard
+#		'scaffold_1720'	3984	Standard
+#		'scaffold_1454'	3982	Standard
+#		'scaffold_1569'	3975	Standard
+#		'scaffold_1620'	3975	Standard
+#		'scaffold_2062'	3971	Standard
+#		'scaffold_1460'	3969	Standard
+#		'scaffold_1541'	3959	Standard
+#		'scaffold_1822'	3959	Standard
+#		'scaffold_1584'	3958	Standard
+#		'scaffold_1557'	3954	Standard
+#		'scaffold_1511'	3953	Standard
+#		'scaffold_1559'	3949	Standard
+#		'scaffold_1509'	3938	Standard
+#		'scaffold_1950'	3932	Standard
+#		'scaffold_1821'	3930	Standard
+#		'scaffold_1760'	3927	Standard
+#		'scaffold_1470'	3923	Standard
+#		'scaffold_1570'	3920	Standard
+#		'scaffold_1472'	3914	Standard
+#		'scaffold_1479'	3900	Standard
+#		'scaffold_2039'	3899	Standard
+#		'scaffold_1482'	3895	Standard
+#		'scaffold_1483'	3893	Standard
+#		'scaffold_1683'	3890	Standard
+#		'scaffold_1486'	3886	Standard
+#		'scaffold_1488'	3884	Standard
+#		'scaffold_1491'	3877	Standard
+#		'scaffold_1492'	3875	Standard
+#		'scaffold_1767'	3870	Standard
+#		'scaffold_1983'	3866	Standard
+#		'scaffold_1505'	3843	Standard
+#		'scaffold_1958'	3835	Standard
+#		'scaffold_2147'	3835	Standard
+#		'scaffold_2178'	3824	Standard
+#		'scaffold_1566'	3804	Standard
+#		'scaffold_2145'	3804	Standard
+#		'scaffold_2010'	3797	Standard
+#		'scaffold_2169'	3795	Standard
+#		'scaffold_1599'	3794	Standard
+#		'scaffold_1587'	3793	Standard
+#		'scaffold_1857'	3787	Standard
+#		'scaffold_1848'	3786	Standard
+#		'scaffold_1731'	3778	Standard
+#		'scaffold_1537'	3765	Standard
+#		'scaffold_1786'	3764	Standard
+#		'scaffold_1713'	3762	Standard
+#		'scaffold_1861'	3756	Standard
+#		'scaffold_1666'	3754	Standard
+#		'scaffold_1867'	3750	Standard
+#		'scaffold_1897'	3733	Standard
+#		'scaffold_1550'	3723	Standard
+#		'scaffold_1875'	3710	Standard
+#		'scaffold_1750'	3695	Standard
+#		'scaffold_1655'	3692	Standard
+#		'scaffold_1656'	3689	Standard
+#		'scaffold_1996'	3688	Standard
+#		'scaffold_1787'	3682	Standard
+#		'scaffold_1607'	3678	Standard
+#		'scaffold_1689'	3675	Standard
+#		'scaffold_1819'	3663	Standard
+#		'scaffold_1825'	3663	Standard
+#		'scaffold_1699'	3661	Standard
+#		'scaffold_1806'	3657	Standard
+#		'scaffold_1687'	3652	Standard
+#		'scaffold_2244'	3649	Standard
+#		'scaffold_1586'	3621	Standard
+#		'scaffold_1591'	3611	Standard
+#		'scaffold_1596'	3598	Standard
+#		'scaffold_1597'	3596	Standard
+#		'scaffold_1667'	3587	Standard
+#		'scaffold_1928'	3586	Standard
+#		'scaffold_1605'	3584	Standard
+#		'scaffold_2175'	3580	Standard
+#		'scaffold_1931'	3577	Standard
+#		'scaffold_1668'	3575	Standard
+#		'scaffold_1865'	3572	Standard
+#		'scaffold_1609'	3570	Standard
+#		'scaffold_1842'	3569	Standard
+#		'scaffold_1616'	3560	Standard
+#		'scaffold_1619'	3555	Standard
+#		'scaffold_1743'	3551	Standard
+#		'scaffold_1961'	3545	Standard
+#		'scaffold_1845'	3542	Standard
+#		'scaffold_2198'	3538	Standard
+#		'scaffold_1626'	3531	Standard
+#		'scaffold_1627'	3530	Standard
+#		'scaffold_1904'	3525	Standard
+#		'scaffold_1930'	3524	Standard
+#		'scaffold_1854'	3504	Standard
+#		'scaffold_1751'	3478	Standard
+#		'scaffold_2061'	3477	Standard
+#		'scaffold_1870'	3476	Standard
+#		'scaffold_2141'	3473	Standard
+#		'scaffold_1700'	3471	Standard
+#		'scaffold_2088'	3470	Standard
+#		'scaffold_2216'	3463	Standard
+#		'scaffold_1651'	3459	Standard
+#		'scaffold_1872'	3449	Standard
+#		'scaffold_2233'	3448	Standard
+#		'scaffold_2243'	3444	Standard
+#		'scaffold_1657'	3442	Standard
+#		'scaffold_1658'	3439	Standard
+#		'scaffold_1740'	3421	Standard
+#		'scaffold_1981'	3414	Standard
+#		'scaffold_1670'	3399	Standard
+#		'scaffold_1940'	3392	Standard
+#		'scaffold_1672'	3391	Standard
+#		'scaffold_1818'	3386	Standard
+#		'scaffold_1926'	3377	Standard
+#		'scaffold_1962'	3369	Standard
+#		'scaffold_1675'	3366	Standard
+#		'scaffold_1677'	3363	Standard
+#		'scaffold_2013'	3359	Standard
+#		'scaffold_2000'	3328	Standard
+#		'scaffold_2170'	3322	Standard
+#		'scaffold_1953'	3318	Standard
+#		'scaffold_1945'	3308	Standard
+#		'scaffold_2187'	3288	Standard
+#		'scaffold_1876'	3272	Standard
+#		'scaffold_1893'	3271	Standard
+#		'scaffold_1855'	3267	Standard
+#		'scaffold_1892'	3266	Standard
+#		'scaffold_1877'	3254	Standard
+#		'scaffold_1730'	3251	Standard
+#		'scaffold_2110'	3251	Standard
+#		'scaffold_1881'	3250	Standard
+#		'scaffold_1781'	3247	Standard
+#		'scaffold_2107'	3244	Standard
+#		'scaffold_1939'	3234	Standard
+#		'scaffold_1853'	3225	Standard
+#		'scaffold_2045'	3220	Standard
+#		'scaffold_1841'	3218	Standard
+#		'scaffold_1955'	3206	Standard
+#		'scaffold_1992'	3205	Standard
+#		'scaffold_2229'	3204	Standard
+#		'scaffold_1718'	3192	Standard
+#		'scaffold_1803'	3191	Standard
+#		'scaffold_2185'	3184	Standard
+#		'scaffold_2085'	3182	Standard
+#		'scaffold_1984'	3180	Standard
+#		'scaffold_1891'	3166	Standard
+#		'scaffold_2153'	3163	Standard
+#		'scaffold_1756'	3151	Standard
+#		'scaffold_1733'	3138	Standard
+#		'scaffold_2069'	3132	Standard
+#		'scaffold_1944'	3125	Standard
+#		'scaffold_2079'	3118	Standard
+#		'scaffold_2180'	3117	Standard
+#		'scaffold_2042'	3111	Standard
+#		'scaffold_2047'	3099	Standard
+#		'scaffold_1744'	3094	Standard
+#		'scaffold_1746'	3080	Standard
+#		'scaffold_2080'	3071	Standard
+#		'scaffold_2060'	3043	Standard
+#		'scaffold_2117'	3035	Standard
+#		'scaffold_1808'	3027	Standard
+#		'scaffold_1851'	3015	Standard
+#		'scaffold_2003'	3009	Standard
+#		'scaffold_2083'	3008	Standard
+#		'scaffold_2033'	3007	Standard
+#		'scaffold_1889'	2998	Standard
+#		'scaffold_1766'	2995	Standard
+#		'scaffold_2030'	2994	Standard
+#		'scaffold_1790'	2983	Standard
+#		'scaffold_1995'	2982	Standard
+#		'scaffold_2070'	2981	Standard
+#		'scaffold_1873'	2972	Standard
+#		'scaffold_2194'	2959	Standard
+#		'scaffold_1779'	2956	Standard
+#		'scaffold_1801'	2951	Standard
+#		'scaffold_2200'	2950	Standard
+#		'scaffold_2026'	2940	Standard
+#		'scaffold_2221'	2933	Standard
+#		'scaffold_1968'	2924	Standard
+#		'scaffold_2068'	2916	Standard
+#		'scaffold_1784'	2904	Standard
+#		'scaffold_1797'	2869	Standard
+#		'scaffold_1911'	2844	Standard
+#		'scaffold_1823'	2785	Standard
+#		'scaffold_2205'	2719	Standard
+#		'scaffold_1843'	2700	Standard
+#		'scaffold_1852'	2649	Standard
+#		'scaffold_1860'	2609	Standard
+#		'scaffold_1862'	2604	Standard
+#		'scaffold_2019'	2603	Standard
+#		'scaffold_2058'	2570	Standard
+#		'scaffold_1959'	2538	Standard
+#		'scaffold_2099'	2523	Standard
+#		'scaffold_1890'	2494	Standard
+#		'scaffold_2181'	2476	Standard
+#		'scaffold_2267'	2474	Standard
+#		'scaffold_2073'	2471	Standard
+#		'scaffold_1966'	2469	Standard
+#		'scaffold_2095'	2452	Standard
+#		'scaffold_1895'	2448	Standard
+#		'scaffold_1898'	2433	Standard
+#		'scaffold_1902'	2420	Standard
+#		'scaffold_1906'	2410	Standard
+#		'scaffold_1913'	2392	Standard
+#		'scaffold_1972'	2381	Standard
+#		'scaffold_1915'	2376	Standard
+#		'scaffold_1918'	2373	Standard
+#		'scaffold_1920'	2372	Standard
+#		'scaffold_2006'	2337	Standard
+#		'scaffold_1933'	2334	Standard
+#		'scaffold_1941'	2316	Standard
+#		'scaffold_1947'	2297	Standard
+#		'scaffold_1949'	2291	Standard
+#		'scaffold_1951'	2277	Standard
+#		'scaffold_1982'	2262	Standard
+#		'scaffold_1979'	2254	Standard
+#		'scaffold_1963'	2232	Standard
+#		'scaffold_1965'	2207	Standard
+#		'scaffold_1980'	2117	Standard
+#		'scaffold_1985'	2084	Standard
+#		'scaffold_1986'	2083	Standard
+#		'scaffold_2014'	2062	Standard
+#		'scaffold_1991'	2044	Standard
+#		'scaffold_1994'	2026	Standard
+#		'scaffold_1998'	2021	Standard
+#		'scaffold_1999'	2016	Standard
+#		'scaffold_2002'	2011	Standard
+#		'scaffold_2007'	1994	Standard
+#		'scaffold_2012'	1969	Standard
+#		'scaffold_2017'	1951	Standard
+#		'scaffold_2018'	1946	Standard
+#		'scaffold_2023'	1904	Standard
+#		'scaffold_2025'	1893	Standard
+#		'scaffold_2029'	1846	Standard
+#		'scaffold_2031'	1836	Standard
+#		'scaffold_2035'	1827	Standard
+#		'scaffold_2036'	1823	Standard
+#		'scaffold_2038'	1821	Standard
+#		'scaffold_2048'	1779	Standard
+#		'scaffold_2050'	1760	Standard
+#		'scaffold_2051'	1758	Standard
+#		'scaffold_2055'	1736	Standard
+#		'scaffold_2165'	1733	Standard
+#		'scaffold_2057'	1725	Standard
+#		'scaffold_2064'	1706	Standard
+#		'scaffold_2066'	1701	Standard
+#		'scaffold_2076'	1673	Standard
+#		'scaffold_2077'	1669	Standard
+#		'scaffold_2081'	1659	Standard
+#		'scaffold_2082'	1658	Standard
+#		'scaffold_2087'	1630	Standard
+#		'scaffold_2090'	1627	Standard
+#		'scaffold_2092'	1614	Standard
+#		'scaffold_2093'	1611	Standard
+#		'scaffold_2094'	1610	Standard
+#		'scaffold_2096'	1608	Standard
+#		'scaffold_2100'	1601	Standard
+#		'scaffold_2101'	1600	Standard
+#		'scaffold_2103'	1587	Standard
+#		'scaffold_2106'	1572	Standard
+#		'scaffold_2109'	1562	Standard
+#		'scaffold_2112'	1556	Standard
+#		'scaffold_2113'	1555	Standard
+#		'scaffold_2114'	1554	Standard
+#		'scaffold_2115'	1551	Standard
+#		'scaffold_2116'	1550	Standard
+#		'scaffold_2118'	1547	Standard
+#		'scaffold_2121'	1540	Standard
+#		'scaffold_2131'	1521	Standard
+#		'scaffold_2142'	1499	Standard
+#		'scaffold_2143'	1493	Standard
+#		'scaffold_2144'	1493	Standard
+#		'scaffold_2150'	1471	Standard
+#		'scaffold_2155'	1458	Standard
+#		'scaffold_2159'	1444	Standard
+#		'scaffold_2161'	1435	Standard
+#		'scaffold_2171'	1379	Standard
+#		'scaffold_2173'	1374	Standard
+#		'scaffold_2177'	1369	Standard
+#		'scaffold_2179'	1357	Standard
+#		'scaffold_2182'	1349	Standard
+#		'scaffold_2184'	1332	Standard
+#		'scaffold_2186'	1323	Standard
+#		'scaffold_2188'	1318	Standard
+#		'scaffold_2191'	1307	Standard
+#		'scaffold_2192'	1296	Standard
+#		'scaffold_2193'	1291	Standard
+#		'scaffold_2195'	1288	Standard
+#		'scaffold_2196'	1281	Standard
+#		'scaffold_2197'	1280	Standard
+#		'scaffold_2199'	1272	Standard
+#		'scaffold_2201'	1263	Standard
+#		'scaffold_2202'	1260	Standard
+#		'scaffold_2203'	1259	Standard
+#		'scaffold_2206'	1254	Standard
+#		'scaffold_2209'	1231	Standard
+#		'scaffold_2210'	1228	Standard
+#		'scaffold_2214'	1214	Standard
+#		'scaffold_2215'	1213	Standard
+#		'scaffold_2218'	1199	Standard
+#		'scaffold_2219'	1187	Standard
+#		'scaffold_2220'	1183	Standard
+#		'scaffold_2222'	1179	Standard
+#		'scaffold_2225'	1169	Standard
+#		'scaffold_2227'	1166	Standard
+#		'scaffold_2228'	1164	Standard
+#		'scaffold_2231'	1151	Standard
+#		'scaffold_2232'	1150	Standard
+#		'scaffold_2234'	1139	Standard
+#		'scaffold_2235'	1139	Standard
+#		'scaffold_2236'	1136	Standard
+#		'scaffold_2237'	1133	Standard
+#		'scaffold_2238'	1131	Standard
+#		'scaffold_2240'	1128	Standard
+#		'scaffold_2246'	1111	Standard
+#		'scaffold_2248'	1104	Standard
+#		'scaffold_2249'	1102	Standard
+#		'scaffold_2250'	1101	Standard
+#		'scaffold_2251'	1098	Standard
+#		'scaffold_2252'	1098	Standard
+#		'scaffold_2254'	1098	Standard
+#		'scaffold_2255'	1097	Standard
+#		'scaffold_2256'	1094	Standard
+#		'scaffold_2257'	1093	Standard
+#		'scaffold_2259'	1083	Standard
+#		'scaffold_2260'	1078	Standard
+#		'scaffold_2262'	1058	Standard
+#		'scaffold_2264'	1052	Standard
+#		'scaffold_2265'	1051	Standard
+#		'scaffold_2266'	1049	Standard
+#		'scaffold_2269'	1044	Standard
+#		'scaffold_2270'	1044	Standard
+#		'scaffold_2271'	1043	Standard
+#		'scaffold_2272'	1038	Standard
+#		'scaffold_2273'	1037	Standard
+#		'scaffold_2276'	1030	Standard
+#		'scaffold_2277'	1027	Standard
+#		'scaffold_2278'	1025	Standard
+#		'scaffold_2279'	1021	Standard
+#		'scaffold_2280'	1018	Standard
+#		'scaffold_2281'	1017	Standard
+#		'scaffold_2282'	1015	Standard
+#		'scaffold_2287'	1003	Standard
+#-----------------------------------------------
+
+00:00:19	Predicting variants
+00:00:19	Creating sequences from exon information '1'
+00:00:19	Building sequence tree for chromosome '1'
+00:00:19	Building sequence tree for genome sequences
+00:00:19	Done.
+00:00:19	Done. Loaded 12597 sequences.
+00:00:21		10000 variants (4415 variants per second), 9304 VCF entries
+00:00:23		20000 variants (4945 variants per second), 18672 VCF entries
+00:00:24		30000 variants (5723 variants per second), 27944 VCF entries
+00:00:25		40000 variants (6482 variants per second), 37210 VCF entries
+00:00:26		50000 variants (7004 variants per second), 46684 VCF entries
+00:00:26		60000 variants (7573 variants per second), 56109 VCF entries
+00:00:27		70000 variants (8125 variants per second), 65611 VCF entries
+00:00:28		80000 variants (8521 variants per second), 75145 VCF entries
+00:00:29		90000 variants (8929 variants per second), 84680 VCF entries
+00:00:29		100000 variants (9299 variants per second), 94168 VCF entries
+00:00:30		110000 variants (9612 variants per second), 103626 VCF entries
+00:00:31		120000 variants (9851 variants per second), 113005 VCF entries
+00:00:31		130000 variants (10071 variants per second), 122236 VCF entries
+00:00:32		140000 variants (10235 variants per second), 131556 VCF entries
+00:00:33		150000 variants (10340 variants per second), 140971 VCF entries
+00:00:34		160000 variants (10165 variants per second), 150345 VCF entries
+00:00:36		170000 variants (9936 variants per second), 159624 VCF entries
+00:00:37		180000 variants (9791 variants per second), 168974 VCF entries
+00:00:38		190000 variants (9588 variants per second), 178270 VCF entries
+00:00:39	Creating sequences from exon information '2'
+00:00:40	Building sequence tree for chromosome '2'
+00:00:40	Building sequence tree for genome sequences
+00:00:40	Done.
+00:00:40	Done. Loaded 16503 sequences.
+00:00:40		200000 variants (9481 variants per second), 187520 VCF entries
+00:00:41		210000 variants (9405 variants per second), 196751 VCF entries
+00:00:42		220000 variants (9348 variants per second), 205941 VCF entries
+00:00:43		230000 variants (9283 variants per second), 215131 VCF entries
+00:00:45		240000 variants (9197 variants per second), 224329 VCF entries
+00:00:46		250000 variants (9169 variants per second), 233614 VCF entries
+00:00:47		260000 variants (9194 variants per second), 242953 VCF entries
+00:00:48		270000 variants (9219 variants per second), 252082 VCF entries
+00:00:49		280000 variants (9197 variants per second), 261413 VCF entries
+00:00:50		290000 variants (9227 variants per second), 270785 VCF entries
+00:00:51		300000 variants (9359 variants per second), 280216 VCF entries
+00:00:51		310000 variants (9464 variants per second), 289606 VCF entries
+00:00:52		320000 variants (9570 variants per second), 299030 VCF entries
+00:00:53		330000 variants (9692 variants per second), 308320 VCF entries
+00:00:53		340000 variants (9801 variants per second), 317663 VCF entries
+00:00:54		350000 variants (9861 variants per second), 326907 VCF entries
+00:00:55		360000 variants (9874 variants per second), 336177 VCF entries
+00:00:56		370000 variants (9819 variants per second), 345508 VCF entries
+00:00:57		380000 variants (9767 variants per second), 354799 VCF entries
+00:00:59		390000 variants (9723 variants per second), 364023 VCF entries
+00:00:59	Creating sequences from exon information '3'
+00:00:59	Building sequence tree for chromosome '3'
+00:00:59	Building sequence tree for genome sequences
+00:00:59	Done.
+00:00:59	Done. Loaded 14082 sequences.
+00:01:00		400000 variants (9601 variants per second), 373324 VCF entries
+00:01:01		410000 variants (9571 variants per second), 382410 VCF entries
+00:01:02		420000 variants (9582 variants per second), 391492 VCF entries
+00:01:03		430000 variants (9607 variants per second), 400317 VCF entries
+00:01:04		440000 variants (9632 variants per second), 409420 VCF entries
+00:01:05		450000 variants (9668 variants per second), 418741 VCF entries
+00:01:06		460000 variants (9748 variants per second), 428006 VCF entries
+00:01:06		470000 variants (9812 variants per second), 437339 VCF entries
+00:01:07		480000 variants (9882 variants per second), 446712 VCF entries
+00:01:08		490000 variants (9962 variants per second), 456033 VCF entries
+00:01:09		500000 variants (10004 variants per second), 465406 VCF entries
+00:01:09		510000 variants (10033 variants per second), 474802 VCF entries
+00:01:10		520000 variants (10068 variants per second), 483999 VCF entries
+00:01:11		530000 variants (10069 variants per second), 493180 VCF entries
+00:01:12		540000 variants (10036 variants per second), 502466 VCF entries
+00:01:14		550000 variants (9986 variants per second), 511751 VCF entries
+00:01:15		560000 variants (9920 variants per second), 521058 VCF entries
+00:01:16		570000 variants (9872 variants per second), 530356 VCF entries
+00:01:18		580000 variants (9808 variants per second), 539452 VCF entries
+00:01:18	Creating sequences from exon information '4'
+00:01:18	Building sequence tree for chromosome '4'
+00:01:18	Building sequence tree for genome sequences
+00:01:18	Done.
+00:01:18	Done. Loaded 13923 sequences.
+00:01:19		590000 variants (9700 variants per second), 548729 VCF entries
+00:01:21		600000 variants (9653 variants per second), 558060 VCF entries
+00:01:22		610000 variants (9609 variants per second), 567356 VCF entries
+00:01:23		620000 variants (9561 variants per second), 576706 VCF entries
+00:01:25		630000 variants (9533 variants per second), 586003 VCF entries
+00:01:26		640000 variants (9553 variants per second), 595209 VCF entries
+00:01:26		650000 variants (9592 variants per second), 604546 VCF entries
+00:01:27		660000 variants (9632 variants per second), 613951 VCF entries
+00:01:28		670000 variants (9690 variants per second), 623308 VCF entries
+00:01:28		680000 variants (9750 variants per second), 632818 VCF entries
+00:01:29		690000 variants (9799 variants per second), 642230 VCF entries
+00:01:30		700000 variants (9837 variants per second), 651523 VCF entries
+00:01:31		710000 variants (9860 variants per second), 660854 VCF entries
+00:01:32		720000 variants (9862 variants per second), 670265 VCF entries
+00:01:33		730000 variants (9823 variants per second), 679676 VCF entries
+00:01:34		740000 variants (9774 variants per second), 689024 VCF entries
+00:01:36		750000 variants (9737 variants per second), 698408 VCF entries
+00:01:36		760000 variants (9816 variants per second), 707704 VCF entries
+00:01:36		770000 variants (9904 variants per second), 716867 VCF entries
+00:01:36	Creating sequences from exon information '5'
+00:01:37	Building sequence tree for chromosome '5'
+00:01:37	Building sequence tree for genome sequences
+00:01:37	Done.
+00:01:37	Done. Loaded 13425 sequences.
+00:01:38		780000 variants (9846 variants per second), 726244 VCF entries
+00:01:39		790000 variants (9824 variants per second), 735483 VCF entries
+00:01:40		800000 variants (9830 variants per second), 744798 VCF entries
+00:01:41		810000 variants (9862 variants per second), 754109 VCF entries
+00:01:42		820000 variants (9884 variants per second), 763556 VCF entries
+00:01:42		830000 variants (9928 variants per second), 772841 VCF entries
+00:01:43		840000 variants (9965 variants per second), 782137 VCF entries
+00:01:44		850000 variants (9987 variants per second), 791489 VCF entries
+00:01:44		860000 variants (10011 variants per second), 800888 VCF entries
+00:01:46		870000 variants (9984 variants per second), 810140 VCF entries
+00:01:47		880000 variants (9952 variants per second), 819478 VCF entries
+00:01:48		890000 variants (9903 variants per second), 828643 VCF entries
+00:01:50		900000 variants (9857 variants per second), 837829 VCF entries
+00:01:51		910000 variants (9807 variants per second), 846998 VCF entries
+00:01:53		920000 variants (9772 variants per second), 856196 VCF entries
+00:01:53	Creating sequences from exon information '6'
+00:01:54	Building sequence tree for chromosome '6'
+00:01:54	Building sequence tree for genome sequences
+00:01:54	Done.
+00:01:54	Done. Loaded 17429 sequences.
+00:01:54		930000 variants (9719 variants per second), 865518 VCF entries
+00:01:56		940000 variants (9678 variants per second), 874800 VCF entries
+00:01:57		950000 variants (9646 variants per second), 884069 VCF entries
+00:01:59		960000 variants (9603 variants per second), 893379 VCF entries
+00:02:00		970000 variants (9584 variants per second), 902706 VCF entries
+00:02:01		980000 variants (9548 variants per second), 911950 VCF entries
+00:02:03		990000 variants (9519 variants per second), 921323 VCF entries
+00:02:04		1000000 variants (9496 variants per second), 930572 VCF entries
+00:02:05		1010000 variants (9494 variants per second), 939884 VCF entries
+00:02:06		1020000 variants (9505 variants per second), 949191 VCF entries
+00:02:07		1030000 variants (9520 variants per second), 958480 VCF entries
+00:02:07		1040000 variants (9548 variants per second), 967855 VCF entries
+00:02:08		1050000 variants (9582 variants per second), 977150 VCF entries
+00:02:09		1060000 variants (9616 variants per second), 986545 VCF entries
+00:02:10		1070000 variants (9640 variants per second), 995956 VCF entries
+00:02:10		1080000 variants (9667 variants per second), 1005205 VCF entries
+00:02:11		1090000 variants (9672 variants per second), 1014521 VCF entries
+00:02:12		1100000 variants (9670 variants per second), 1023799 VCF entries
+00:02:13		1110000 variants (9662 variants per second), 1032915 VCF entries
+00:02:15		1120000 variants (9645 variants per second), 1042012 VCF entries
+00:02:16		1130000 variants (9642 variants per second), 1051284 VCF entries
+00:02:16	Creating sequences from exon information '7'
+00:02:16	Building sequence tree for chromosome '7'
+00:02:16	Building sequence tree for genome sequences
+00:02:16	Done.
+00:02:16	Done. Loaded 14862 sequences.
+00:02:17		1140000 variants (9602 variants per second), 1060692 VCF entries
+00:02:19		1150000 variants (9576 variants per second), 1070051 VCF entries
+00:02:20		1160000 variants (9558 variants per second), 1079390 VCF entries
+00:02:21		1170000 variants (9529 variants per second), 1088513 VCF entries
+00:02:22		1180000 variants (9523 variants per second), 1097692 VCF entries
+00:02:24		1190000 variants (9514 variants per second), 1106822 VCF entries
+00:02:25		1200000 variants (9515 variants per second), 1116104 VCF entries
+00:02:25		1210000 variants (9536 variants per second), 1125590 VCF entries
+00:02:27		1220000 variants (9531 variants per second), 1134808 VCF entries
+00:02:28		1230000 variants (9533 variants per second), 1144045 VCF entries
+00:02:28		1240000 variants (9553 variants per second), 1153370 VCF entries
+00:02:29		1250000 variants (9584 variants per second), 1162674 VCF entries
+00:02:30		1260000 variants (9591 variants per second), 1172034 VCF entries
+00:02:31		1270000 variants (9589 variants per second), 1181290 VCF entries
+00:02:32		1280000 variants (9583 variants per second), 1190553 VCF entries
+00:02:33		1290000 variants (9585 variants per second), 1200032 VCF entries
+00:02:35		1300000 variants (9562 variants per second), 1209419 VCF entries
+00:02:35	Creating sequences from exon information '8'
+00:02:36	Building sequence tree for chromosome '8'
+00:02:36	Building sequence tree for genome sequences
+00:02:36	Done.
+00:02:36	Done. Loaded 20212 sequences.
+00:02:36		1310000 variants (9517 variants per second), 1218791 VCF entries
+00:02:38		1320000 variants (9498 variants per second), 1227988 VCF entries
+00:02:41		1330000 variants (9319 variants per second), 1237341 VCF entries
+00:02:43		1340000 variants (9300 variants per second), 1246586 VCF entries
+00:02:44		1350000 variants (9277 variants per second), 1255952 VCF entries
+00:02:46		1360000 variants (9253 variants per second), 1265193 VCF entries
+00:02:47		1370000 variants (9228 variants per second), 1274504 VCF entries
+00:02:48		1380000 variants (9224 variants per second), 1283816 VCF entries
+00:02:50		1390000 variants (9209 variants per second), 1293023 VCF entries
+00:02:51		1400000 variants (9192 variants per second), 1302255 VCF entries
+00:02:52		1410000 variants (9178 variants per second), 1311591 VCF entries
+00:02:53		1420000 variants (9179 variants per second), 1320994 VCF entries
+00:02:54		1430000 variants (9182 variants per second), 1330376 VCF entries
+00:02:55		1440000 variants (9208 variants per second), 1339743 VCF entries
+00:02:56		1450000 variants (9231 variants per second), 1349164 VCF entries
+00:02:57		1460000 variants (9227 variants per second), 1358649 VCF entries
+00:02:58		1470000 variants (9226 variants per second), 1368076 VCF entries
+00:02:59		1480000 variants (9209 variants per second), 1377348 VCF entries
+00:03:01		1490000 variants (9193 variants per second), 1386705 VCF entries
+00:03:02		1500000 variants (9203 variants per second), 1395945 VCF entries
+00:03:02	Creating sequences from exon information '9'
+00:03:02	Building sequence tree for chromosome '9'
+00:03:02	Building sequence tree for genome sequences
+00:03:02	Done.
+00:03:02	Done. Loaded 14867 sequences.
+00:03:03		1510000 variants (9178 variants per second), 1405295 VCF entries
+00:03:04		1520000 variants (9165 variants per second), 1414570 VCF entries
+00:03:06		1530000 variants (9163 variants per second), 1423802 VCF entries
+00:03:07		1540000 variants (9166 variants per second), 1432953 VCF entries
+00:03:08		1550000 variants (9170 variants per second), 1442224 VCF entries
+00:03:08		1560000 variants (9184 variants per second), 1451474 VCF entries
+00:03:09		1570000 variants (9203 variants per second), 1460757 VCF entries
+00:03:10		1580000 variants (9223 variants per second), 1470077 VCF entries
+00:03:11		1590000 variants (9245 variants per second), 1479304 VCF entries
+00:03:11		1600000 variants (9267 variants per second), 1488746 VCF entries
+00:03:12		1610000 variants (9276 variants per second), 1497976 VCF entries
+00:03:13		1620000 variants (9282 variants per second), 1507261 VCF entries
+00:03:14		1630000 variants (9277 variants per second), 1516506 VCF entries
+00:03:16		1640000 variants (9265 variants per second), 1525665 VCF entries
+00:03:17		1650000 variants (9249 variants per second), 1534859 VCF entries
+00:03:18		1660000 variants (9229 variants per second), 1544095 VCF entries
+00:03:20		1670000 variants (9216 variants per second), 1553254 VCF entries
+00:03:21		1680000 variants (9206 variants per second), 1562405 VCF entries
+00:03:21		1690000 variants (9245 variants per second), 1571743 VCF entries
+00:03:22	Creating sequences from exon information '10'
+00:03:22	Building sequence tree for chromosome '10'
+00:03:22	Building sequence tree for genome sequences
+00:03:22	Done.
+00:03:22	Done. Loaded 16226 sequences.
+00:03:22		1700000 variants (9245 variants per second), 1580873 VCF entries
+00:03:24		1710000 variants (9235 variants per second), 1590171 VCF entries
+00:03:25		1720000 variants (9225 variants per second), 1599466 VCF entries
+00:03:26		1730000 variants (9221 variants per second), 1608714 VCF entries
+00:03:27		1740000 variants (9228 variants per second), 1618031 VCF entries
+00:03:28		1750000 variants (9239 variants per second), 1627441 VCF entries
+00:03:29		1760000 variants (9258 variants per second), 1636884 VCF entries
+00:03:29		1770000 variants (9278 variants per second), 1646376 VCF entries
+00:03:30		1780000 variants (9301 variants per second), 1655969 VCF entries
+00:03:31		1790000 variants (9319 variants per second), 1665506 VCF entries
+00:03:31		1800000 variants (9337 variants per second), 1674840 VCF entries
+00:03:32		1810000 variants (9334 variants per second), 1684105 VCF entries
+00:03:34		1820000 variants (9317 variants per second), 1693381 VCF entries
+00:03:35		1830000 variants (9307 variants per second), 1702640 VCF entries
+00:03:36		1840000 variants (9297 variants per second), 1712000 VCF entries
+00:03:38		1850000 variants (9285 variants per second), 1721186 VCF entries
+00:03:39		1860000 variants (9275 variants per second), 1730523 VCF entries
+00:03:41		1870000 variants (9255 variants per second), 1739779 VCF entries
+00:03:42		1880000 variants (9249 variants per second), 1749121 VCF entries
+00:03:42	Creating sequences from exon information '11'
+00:03:42	Building sequence tree for chromosome '11'
+00:03:42	Building sequence tree for genome sequences
+00:03:42	Done.
+00:03:42	Done. Loaded 14840 sequences.
+00:03:44		1890000 variants (9221 variants per second), 1758365 VCF entries
+00:03:45		1900000 variants (9210 variants per second), 1767688 VCF entries
+00:03:46		1910000 variants (9191 variants per second), 1776945 VCF entries
+00:03:48		1920000 variants (9176 variants per second), 1786179 VCF entries
+00:03:49		1930000 variants (9160 variants per second), 1795487 VCF entries
+00:03:50		1940000 variants (9156 variants per second), 1804869 VCF entries
+00:03:51		1950000 variants (9171 variants per second), 1814255 VCF entries
+00:03:52		1960000 variants (9173 variants per second), 1823492 VCF entries
+00:03:53		1970000 variants (9192 variants per second), 1832878 VCF entries
+00:03:54		1980000 variants (9211 variants per second), 1842187 VCF entries
+00:03:54		1990000 variants (9227 variants per second), 1851604 VCF entries
+00:03:55		2000000 variants (9243 variants per second), 1860916 VCF entries
+00:03:56		2010000 variants (9255 variants per second), 1870193 VCF entries
+00:03:56	Creating sequences from exon information '12'
+00:03:56	Building sequence tree for chromosome '12'
+00:03:56	Building sequence tree for genome sequences
+00:03:56	Done.
+00:03:56	Done. Loaded 12738 sequences.
+00:03:57		2020000 variants (9245 variants per second), 1879391 VCF entries
+00:03:59		2030000 variants (9218 variants per second), 1888668 VCF entries
+00:04:00		2040000 variants (9204 variants per second), 1897974 VCF entries
+00:04:01		2050000 variants (9199 variants per second), 1907409 VCF entries
+00:04:03		2060000 variants (9196 variants per second), 1916758 VCF entries
+00:04:03		2070000 variants (9203 variants per second), 1926086 VCF entries
+00:04:04		2080000 variants (9212 variants per second), 1935538 VCF entries
+00:04:05		2090000 variants (9225 variants per second), 1945037 VCF entries
+00:04:06		2100000 variants (9237 variants per second), 1954363 VCF entries
+00:04:07		2110000 variants (9254 variants per second), 1963818 VCF entries
+00:04:07		2120000 variants (9273 variants per second), 1973285 VCF entries
+00:04:08		2130000 variants (9281 variants per second), 1982729 VCF entries
+00:04:09		2140000 variants (9282 variants per second), 1992161 VCF entries
+00:04:10		2150000 variants (9276 variants per second), 2001354 VCF entries
+00:04:12		2160000 variants (9270 variants per second), 2010651 VCF entries
+00:04:13		2170000 variants (9262 variants per second), 2020075 VCF entries
+00:04:13	Creating sequences from exon information '13'
+00:04:13	Building sequence tree for chromosome '13'
+00:04:13	Building sequence tree for genome sequences
+00:04:13	Done.
+00:04:13	Done. Loaded 19878 sequences.
+00:04:14		2180000 variants (9245 variants per second), 2029414 VCF entries
+00:04:15		2190000 variants (9250 variants per second), 2038801 VCF entries
+00:04:16		2200000 variants (9257 variants per second), 2047903 VCF entries
+00:04:17		2210000 variants (9267 variants per second), 2057123 VCF entries
+00:04:19		2220000 variants (9251 variants per second), 2066350 VCF entries
+00:04:19		2230000 variants (9265 variants per second), 2075586 VCF entries
+00:04:20		2240000 variants (9283 variants per second), 2084920 VCF entries
+00:04:21		2250000 variants (9287 variants per second), 2094332 VCF entries
+00:04:22		2260000 variants (9275 variants per second), 2103611 VCF entries
+00:04:23		2270000 variants (9269 variants per second), 2112872 VCF entries
+00:04:25		2280000 variants (9268 variants per second), 2122101 VCF entries
+00:04:26		2290000 variants (9253 variants per second), 2131345 VCF entries
+00:04:27		2300000 variants (9249 variants per second), 2140407 VCF entries
+00:04:29		2310000 variants (9238 variants per second), 2149432 VCF entries
+00:04:30		2320000 variants (9236 variants per second), 2158504 VCF entries
+00:04:31		2330000 variants (9227 variants per second), 2167536 VCF entries
+00:04:32		2340000 variants (9215 variants per second), 2176654 VCF entries
+00:04:34		2350000 variants (9203 variants per second), 2185972 VCF entries
+00:04:35		2360000 variants (9194 variants per second), 2195247 VCF entries
+00:04:37		2370000 variants (9187 variants per second), 2204572 VCF entries
+00:04:38		2380000 variants (9172 variants per second), 2213815 VCF entries
+00:04:40		2390000 variants (9156 variants per second), 2223097 VCF entries
+00:04:40	Creating sequences from exon information '14'
+00:04:40	Building sequence tree for chromosome '14'
+00:04:40	Building sequence tree for genome sequences
+00:04:40	Done.
+00:04:40	Done. Loaded 11717 sequences.
+00:04:41		2400000 variants (9161 variants per second), 2232327 VCF entries
+00:04:42		2410000 variants (9145 variants per second), 2241567 VCF entries
+00:04:43		2420000 variants (9138 variants per second), 2250749 VCF entries
+00:04:45		2430000 variants (9129 variants per second), 2260005 VCF entries
+00:04:46		2440000 variants (9119 variants per second), 2269195 VCF entries
+00:04:47		2450000 variants (9119 variants per second), 2278473 VCF entries
+00:04:48		2460000 variants (9123 variants per second), 2287848 VCF entries
+00:04:49		2470000 variants (9134 variants per second), 2297178 VCF entries
+00:04:50		2480000 variants (9145 variants per second), 2306494 VCF entries
+00:04:50		2490000 variants (9159 variants per second), 2315975 VCF entries
+00:04:51		2500000 variants (9175 variants per second), 2325476 VCF entries
+00:04:52		2510000 variants (9188 variants per second), 2334888 VCF entries
+00:04:52		2520000 variants (9201 variants per second), 2344337 VCF entries
+00:04:53		2530000 variants (9217 variants per second), 2353808 VCF entries
+00:04:54		2540000 variants (9231 variants per second), 2363222 VCF entries
+00:04:54		2550000 variants (9242 variants per second), 2372562 VCF entries
+00:04:55		2560000 variants (9250 variants per second), 2381977 VCF entries
+00:04:56		2570000 variants (9248 variants per second), 2391299 VCF entries
+00:04:58		2580000 variants (9246 variants per second), 2400545 VCF entries
+00:04:58	Creating sequences from exon information '15'
+00:04:59	Building sequence tree for chromosome '15'
+00:04:59	Building sequence tree for genome sequences
+00:04:59	Done.
+00:04:59	Done. Loaded 14640 sequences.
+00:04:59		2590000 variants (9228 variants per second), 2409926 VCF entries
+00:05:01		2600000 variants (9219 variants per second), 2419181 VCF entries
+00:05:02		2610000 variants (9208 variants per second), 2428529 VCF entries
+00:05:03		2620000 variants (9199 variants per second), 2437919 VCF entries
+00:05:05		2630000 variants (9189 variants per second), 2447224 VCF entries
+00:05:06		2640000 variants (9183 variants per second), 2456484 VCF entries
+00:05:07		2650000 variants (9182 variants per second), 2465744 VCF entries
+00:05:08		2660000 variants (9182 variants per second), 2475082 VCF entries
+00:05:09		2670000 variants (9181 variants per second), 2484454 VCF entries
+00:05:10		2680000 variants (9182 variants per second), 2493752 VCF entries
+00:05:11		2690000 variants (9189 variants per second), 2503188 VCF entries
+00:05:12		2700000 variants (9200 variants per second), 2512556 VCF entries
+00:05:13		2710000 variants (9213 variants per second), 2521927 VCF entries
+00:05:13		2720000 variants (9227 variants per second), 2531217 VCF entries
+00:05:14		2730000 variants (9240 variants per second), 2540604 VCF entries
+00:05:15		2740000 variants (9253 variants per second), 2550012 VCF entries
+00:05:15		2750000 variants (9265 variants per second), 2559427 VCF entries
+00:05:16		2760000 variants (9269 variants per second), 2568600 VCF entries
+00:05:17		2770000 variants (9271 variants per second), 2577923 VCF entries
+00:05:18		2780000 variants (9275 variants per second), 2587253 VCF entries
+00:05:19		2790000 variants (9276 variants per second), 2596577 VCF entries
+00:05:20		2800000 variants (9290 variants per second), 2605946 VCF entries
+00:05:20	Creating sequences from exon information '16'
+00:05:20	Building sequence tree for chromosome '16'
+00:05:20	Building sequence tree for genome sequences
+00:05:20	Done.
+00:05:20	Done. Loaded 11063 sequences.
+00:05:22		2810000 variants (9275 variants per second), 2615198 VCF entries
+00:05:23		2820000 variants (9266 variants per second), 2624417 VCF entries
+00:05:24		2830000 variants (9263 variants per second), 2633561 VCF entries
+00:05:25		2840000 variants (9262 variants per second), 2642936 VCF entries
+00:05:26		2850000 variants (9258 variants per second), 2652262 VCF entries
+00:05:27		2860000 variants (9266 variants per second), 2661725 VCF entries
+00:05:28		2870000 variants (9278 variants per second), 2671219 VCF entries
+00:05:29		2880000 variants (9284 variants per second), 2680726 VCF entries
+00:05:29		2890000 variants (9296 variants per second), 2690245 VCF entries
+00:05:30		2900000 variants (9303 variants per second), 2699608 VCF entries
+00:05:31		2910000 variants (9307 variants per second), 2708801 VCF entries
+00:05:32		2920000 variants (9307 variants per second), 2717964 VCF entries
+00:05:33		2930000 variants (9305 variants per second), 2727134 VCF entries
+00:05:35		2940000 variants (9296 variants per second), 2736313 VCF entries
+00:05:36		2950000 variants (9293 variants per second), 2745371 VCF entries
+00:05:37		2960000 variants (9283 variants per second), 2754515 VCF entries
+00:05:39		2970000 variants (9272 variants per second), 2763640 VCF entries
+00:05:39	Creating sequences from exon information '17'
+00:05:40	Building sequence tree for chromosome '17'
+00:05:40	Building sequence tree for genome sequences
+00:05:40	Done.
+00:05:40	Done. Loaded 14607 sequences.
+00:05:40		2980000 variants (9265 variants per second), 2772862 VCF entries
+00:05:42		2990000 variants (9253 variants per second), 2782176 VCF entries
+00:05:43		3000000 variants (9247 variants per second), 2791487 VCF entries
+00:05:44		3010000 variants (9238 variants per second), 2800827 VCF entries
+00:05:46		3020000 variants (9229 variants per second), 2810044 VCF entries
+00:05:47		3030000 variants (9220 variants per second), 2819312 VCF entries
+00:05:48		3040000 variants (9218 variants per second), 2828501 VCF entries
+00:05:49		3050000 variants (9219 variants per second), 2837745 VCF entries
+00:05:50		3060000 variants (9226 variants per second), 2847105 VCF entries
+00:05:51		3070000 variants (9237 variants per second), 2856550 VCF entries
+00:05:52		3080000 variants (9248 variants per second), 2865852 VCF entries
+00:05:52		3090000 variants (9255 variants per second), 2875255 VCF entries
+00:05:53		3100000 variants (9263 variants per second), 2884643 VCF entries
+00:05:54		3110000 variants (9267 variants per second), 2893950 VCF entries
+00:05:55		3120000 variants (9270 variants per second), 2903181 VCF entries
+00:05:56		3130000 variants (9270 variants per second), 2912388 VCF entries
+00:05:57		3140000 variants (9266 variants per second), 2921708 VCF entries
+00:05:58	Creating sequences from exon information '18'
+00:05:58	Building sequence tree for chromosome '18'
+00:05:58	Building sequence tree for genome sequences
+00:05:58	Done.
+00:05:58	Done. Loaded 14972 sequences.
+00:05:59		3150000 variants (9250 variants per second), 2930922 VCF entries
+00:06:00		3160000 variants (9246 variants per second), 2939933 VCF entries
+00:06:01		3170000 variants (9244 variants per second), 2949197 VCF entries
+00:06:03		3180000 variants (9243 variants per second), 2958449 VCF entries
+00:06:04		3190000 variants (9242 variants per second), 2967755 VCF entries
+00:06:05		3200000 variants (9241 variants per second), 2977075 VCF entries
+00:06:06		3210000 variants (9246 variants per second), 2986346 VCF entries
+00:06:07		3220000 variants (9247 variants per second), 2995689 VCF entries
+00:06:08		3230000 variants (9255 variants per second), 3005045 VCF entries
+00:06:08		3240000 variants (9264 variants per second), 3014342 VCF entries
+00:06:09		3250000 variants (9274 variants per second), 3023600 VCF entries
+00:06:10		3260000 variants (9284 variants per second), 3032923 VCF entries
+00:06:10		3270000 variants (9293 variants per second), 3042321 VCF entries
+00:06:11		3280000 variants (9304 variants per second), 3051702 VCF entries
+00:06:12		3290000 variants (9316 variants per second), 3061012 VCF entries
+00:06:12		3300000 variants (9328 variants per second), 3070371 VCF entries
+00:06:13		3310000 variants (9339 variants per second), 3079790 VCF entries
+00:06:14		3320000 variants (9349 variants per second), 3089102 VCF entries
+00:06:14		3330000 variants (9359 variants per second), 3098445 VCF entries
+00:06:15		3340000 variants (9369 variants per second), 3107744 VCF entries
+00:06:16		3350000 variants (9377 variants per second), 3116979 VCF entries
+00:06:17		3360000 variants (9385 variants per second), 3126351 VCF entries
+00:06:17		3370000 variants (9392 variants per second), 3135445 VCF entries
+00:06:18		3380000 variants (9395 variants per second), 3144571 VCF entries
+00:06:19		3390000 variants (9396 variants per second), 3153675 VCF entries
+00:06:21		3400000 variants (9392 variants per second), 3162682 VCF entries
+00:06:22		3410000 variants (9386 variants per second), 3171876 VCF entries
+00:06:23	Creating sequences from exon information '19'
+00:06:23	Building sequence tree for chromosome '19'
+00:06:23	Building sequence tree for genome sequences
+00:06:23	Done.
+00:06:23	Done. Loaded 13686 sequences.
+00:06:23		3420000 variants (9375 variants per second), 3180991 VCF entries
+00:06:25		3430000 variants (9371 variants per second), 3190235 VCF entries
+00:06:26		3440000 variants (9374 variants per second), 3199569 VCF entries
+00:06:26		3450000 variants (9379 variants per second), 3208929 VCF entries
+00:06:27		3460000 variants (9384 variants per second), 3218330 VCF entries
+00:06:28		3470000 variants (9393 variants per second), 3227647 VCF entries
+00:06:29		3480000 variants (9402 variants per second), 3237042 VCF entries
+00:06:29		3490000 variants (9412 variants per second), 3246520 VCF entries
+00:06:30		3500000 variants (9422 variants per second), 3255913 VCF entries
+00:06:31		3510000 variants (9430 variants per second), 3265403 VCF entries
+00:06:32		3520000 variants (9438 variants per second), 3274805 VCF entries
+00:06:32		3530000 variants (9443 variants per second), 3284183 VCF entries
+00:06:33		3540000 variants (9445 variants per second), 3293561 VCF entries
+00:06:34		3550000 variants (9445 variants per second), 3302951 VCF entries
+00:06:36		3560000 variants (9439 variants per second), 3312085 VCF entries
+00:06:37		3570000 variants (9439 variants per second), 3321327 VCF entries
+00:06:38		3580000 variants (9431 variants per second), 3330695 VCF entries
+00:06:39		3590000 variants (9425 variants per second), 3339914 VCF entries
+00:06:41		3600000 variants (9415 variants per second), 3349218 VCF entries
+00:06:42		3610000 variants (9404 variants per second), 3358412 VCF entries
+00:06:43	Creating sequences from exon information '20'
+00:06:43	Building sequence tree for chromosome '20'
+00:06:43	Building sequence tree for genome sequences
+00:06:43	Done.
+00:06:43	Done. Loaded 13278 sequences.
+00:06:44		3620000 variants (9395 variants per second), 3367752 VCF entries
+00:06:45		3630000 variants (9394 variants per second), 3376990 VCF entries
+00:06:46		3640000 variants (9400 variants per second), 3386382 VCF entries
+00:06:46		3650000 variants (9410 variants per second), 3395877 VCF entries
+00:06:47		3660000 variants (9417 variants per second), 3405387 VCF entries
+00:06:48		3670000 variants (9426 variants per second), 3414825 VCF entries
+00:06:49		3680000 variants (9435 variants per second), 3424254 VCF entries
+00:06:49		3690000 variants (9444 variants per second), 3433695 VCF entries
+00:06:50		3700000 variants (9453 variants per second), 3443185 VCF entries
+00:06:51		3710000 variants (9450 variants per second), 3452581 VCF entries
+00:06:52		3720000 variants (9447 variants per second), 3461821 VCF entries
+00:06:54		3730000 variants (9438 variants per second), 3471095 VCF entries
+00:06:55		3740000 variants (9431 variants per second), 3480374 VCF entries
+00:06:56		3750000 variants (9425 variants per second), 3489580 VCF entries
+00:06:58		3760000 variants (9420 variants per second), 3498839 VCF entries
+00:06:59		3770000 variants (9413 variants per second), 3508182 VCF entries
+00:07:01		3780000 variants (9403 variants per second), 3517357 VCF entries
+00:07:01		3790000 variants (9406 variants per second), 3526628 VCF entries
+00:07:02	Creating sequences from exon information 'scaffold_21'
+00:07:02	Building sequence tree for chromosome 'scaffold_21'
+00:07:02	Building sequence tree for genome sequences
+00:07:02	Done.
+00:07:02	Done. Loaded 10 sequences.
+00:07:02		3800000 variants (9422 variants per second), 3535872 VCF entries
+00:07:02	Creating sequences from exon information 'scaffold_22'
+00:07:02	Building sequence tree for chromosome 'scaffold_22'
+00:07:02	Building sequence tree for genome sequences
+00:07:02	Done.
+00:07:02	Done. Loaded 46 sequences.
+00:07:02	Creating sequences from exon information 'scaffold_23'
+00:07:02	Building sequence tree for chromosome 'scaffold_23'
+00:07:02	Building sequence tree for genome sequences
+00:07:02	Done.
+00:07:02	Done. Loaded 15 sequences.
+00:07:02	Creating sequences from exon information 'scaffold_24'
+00:07:02	Building sequence tree for chromosome 'scaffold_24'
+00:07:02	Building sequence tree for genome sequences
+00:07:02	Done.
+00:07:02	Done. Loaded 14 sequences.
+00:07:02	Creating sequences from exon information 'scaffold_28'
+00:07:02	Building sequence tree for chromosome 'scaffold_28'
+00:07:02	Building sequence tree for genome sequences
+00:07:02	Done.
+00:07:02	Done. Loaded 18 sequences.
+00:07:02		3810000 variants (9434 variants per second), 3545201 VCF entries
+00:07:02	Creating sequences from exon information 'scaffold_41'
+00:07:02	Building sequence tree for chromosome 'scaffold_41'
+00:07:02	Building sequence tree for genome sequences
+00:07:02	Done.
+00:07:02	Done. Loaded 70 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_48'
+00:07:03	Building sequence tree for chromosome 'scaffold_48'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 83 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_57'
+00:07:03	Building sequence tree for chromosome 'scaffold_57'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 7 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_60'
+00:07:03	Building sequence tree for chromosome 'scaffold_60'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 10 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_66'
+00:07:03	Building sequence tree for chromosome 'scaffold_66'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 4 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_79'
+00:07:03	Building sequence tree for chromosome 'scaffold_79'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 26 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_80'
+00:07:03	Building sequence tree for chromosome 'scaffold_80'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 9 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_91'
+00:07:03	Building sequence tree for chromosome 'scaffold_91'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 4 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_92'
+00:07:03	Building sequence tree for chromosome 'scaffold_92'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 12 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_96'
+00:07:03	Building sequence tree for chromosome 'scaffold_96'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 12 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_101'
+00:07:03	Building sequence tree for chromosome 'scaffold_101'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 12 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_103'
+00:07:03	Building sequence tree for chromosome 'scaffold_103'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 7 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_120'
+00:07:03	Building sequence tree for chromosome 'scaffold_120'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 5 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_121'
+00:07:03	Building sequence tree for chromosome 'scaffold_121'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 10 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_128'
+00:07:03	Building sequence tree for chromosome 'scaffold_128'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 1 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_146'
+00:07:03	Building sequence tree for chromosome 'scaffold_146'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 2 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_165'
+00:07:03	Building sequence tree for chromosome 'scaffold_165'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 9 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_273'
+00:07:03	Building sequence tree for chromosome 'scaffold_273'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 2 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_317'
+00:07:03	Building sequence tree for chromosome 'scaffold_317'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 4 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_346'
+00:07:03	Building sequence tree for chromosome 'scaffold_346'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 2 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_349'
+00:07:03	Building sequence tree for chromosome 'scaffold_349'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 3 sequences.
+00:07:03		3820000 variants (9446 variants per second), 3554711 VCF entries
+00:07:03	Creating sequences from exon information 'scaffold_427'
+00:07:03	Building sequence tree for chromosome 'scaffold_427'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 3 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_490'
+00:07:03	Building sequence tree for chromosome 'scaffold_490'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 2 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_712'
+00:07:03	Building sequence tree for chromosome 'scaffold_712'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 3 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_732'
+00:07:03	Building sequence tree for chromosome 'scaffold_732'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 1 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_839'
+00:07:03	Building sequence tree for chromosome 'scaffold_839'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 6 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_886'
+00:07:03	Building sequence tree for chromosome 'scaffold_886'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 8 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_892'
+00:07:03	Building sequence tree for chromosome 'scaffold_892'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 1 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_938'
+00:07:03	Building sequence tree for chromosome 'scaffold_938'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 5 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_1057'
+00:07:03	Building sequence tree for chromosome 'scaffold_1057'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 2 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_1179'
+00:07:03	Building sequence tree for chromosome 'scaffold_1179'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 1 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_1337'
+00:07:03	Building sequence tree for chromosome 'scaffold_1337'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 1 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_1377'
+00:07:03	Building sequence tree for chromosome 'scaffold_1377'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 1 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_1403'
+00:07:03	Building sequence tree for chromosome 'scaffold_1403'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 3 sequences.
+00:07:03	Creating sequences from exon information 'scaffold_1947'
+00:07:03	Building sequence tree for chromosome 'scaffold_1947'
+00:07:03	Building sequence tree for genome sequences
+00:07:03	Done.
+00:07:03	Done. Loaded 1 sequences.
+
+ERRORS: Some errors were detected
+Error type	Number of errors
+ERROR_CHROMOSOME_NOT_FOUND	5696
+ERROR_OUT_OF_CHROMOSOME_RANGE	81432
+
+
+
+WARNINGS: Some warning were detected
+Warning type	Number of warnings
+INFO_REALIGN_3_PRIME	23590
+WARNING_REF_DOES_NOT_MATCH_GENOME	269493
+WARNING_TRANSCRIPT_INCOMPLETE	12180
+WARNING_TRANSCRIPT_INCOMPLETE&INFO_REALIGN_3_PRIME	70
+WARNING_TRANSCRIPT_INCOMPLETE&WARNING_REF_DOES_NOT_MATCH_GENOME	678
+WARNING_TRANSCRIPT_MULTIPLE_STOP_CODONS	5
+WARNING_TRANSCRIPT_MULTIPLE_STOP_CODONS&WARNING_REF_DOES_NOT_MATCH_GENOME	1
+WARNING_TRANSCRIPT_NO_START_CODON	136927
+WARNING_TRANSCRIPT_NO_START_CODON&INFO_REALIGN_3_PRIME	260
+WARNING_TRANSCRIPT_NO_START_CODON&WARNING_REF_DOES_NOT_MATCH_GENOME	4956
+WARNING_TRANSCRIPT_NO_STOP_CODON	33272
+WARNING_TRANSCRIPT_NO_STOP_CODON&INFO_REALIGN_3_PRIME	158
+WARNING_TRANSCRIPT_NO_STOP_CODON&WARNING_REF_DOES_NOT_MATCH_GENOME	1178
+
+
+00:07:03	Creating summary file: protein_lines.html
+00:07:04	Creating genes file: ./protein_lines.genes.txt
+00:07:07	done.
+00:07:07	Logging
+00:07:09	Checking for updates...
+00:07:10	Done.
